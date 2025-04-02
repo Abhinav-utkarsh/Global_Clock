@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Clock</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="clock-container">
+        <div class="header">Global Clock By <a style="font-weight: bolder; color: rgb(75, 103, 245);">Av_eSAFE</a></div>
+        <div class="time-slider">
+            <input type="range" min="0" max="24" value="0" id="timeRange" class="custom-slider"><br>
+        </div>
+        <div class="time-slider2">
+            <span class="label" >Now</span> <!--id="nowLabel" Id for hiding Now when slider move-->
+            <span class="label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+24 hours</span>
+        </div>
+        <div class="current-time" id="timeDisplay">Displaying current time</div>
+        <div id="currentDateTime"></div>
+
+        <!-- Time Zones -->
+        <table class="timezone-table">
+            <tr>
+                <td class="font_for_country"><span class='flag-icon flag-icon-in'></span> India</td>
+                <td id='indiaDate'></td>
+                <td id='indiaTime'></td>
+            </tr>
+            <tr>
+                <td class="font_for_country"><span class='flag-icon flag-icon-jp'></span> Japan</td>
+                <td id='japanDate'></td>
+                <td id='japanTime'></td>
+            </tr>
+            <tr>
+                <td class="font_for_country"><span class='flag-icon flag-icon-au'></span> Sydney</td>
+                <td id='sydneyDate'></td>
+                <td id='sydneyTime'></td>
+            </tr>
+            <tr>
+                <td class="font_for_country"><span class='flag-icon flag-icon-us'></span> New Jersey</td>
+                <td id='newJerseyDate'></td>
+                <td id='newJerseyTime'></td>
+            </tr>
+            <tr>
+                <td class="font_for_country"><span class='flag-icon flag-icon-gb'></span> London</td>
+                <td id='londonDate'></td>
+                <td id='londonTime'></td>
+            </tr>
+            <tr>
+                <td class="font_for_country"><span class='flag-icon flag-icon-ae'></span> Dubai</td>
+                <td id='dubaiDate'></td>
+                <td id='dubaiTime'></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+
+</body>
+</html>

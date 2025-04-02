@@ -1,0 +1,94 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: small;
+    background-color: #cbd6f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .clock-container {
+    background-color: white;
+    border-radius: 10px;
+    border: solid 2px;
+    padding: 20px;
+    
+    border-color: #2f78c4;
+    position: fixed;
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    width: 300px; /* Ensure it doesn't stretch to full width */
+    height: 350px;
+    max-width: 600px; /* Set a maximum width to keep it small */
+    z-index: 1000; /* Ensure it stays on top */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visibility */
+}
+  
+  .header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 35px;
+  }
+  
+  .time-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .custom-slider {
+    margin-left: 20px;
+    margin-right: 20px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 4px;
+    background: gray;
+    border-radius: 3px;
+    outline: none;
+    transition: background 0.15s ease-in-out;
+  }
+  
+  .custom-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 17px;
+    height: 17px;
+    background: #2f78c4;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .current-time {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .timezone-table {
+    
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-color: white;
+  }
+  .timezone-table td {
+    padding: 10px;
+    border: 0px solid #ddd;
+    font-size: small;
+    
+  }
+
+  .font_for_country {
+    font-weight: bold;
+    color: #2f78c4;
+  }
+  
+  .flag-icon {
+    margin-right: 10px;
+  }
+
+
+ 
